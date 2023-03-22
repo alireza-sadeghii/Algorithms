@@ -1,5 +1,6 @@
 package ir.ac.kntu;
 
+import ir.ac.kntu.sorting.Bubble;
 import ir.ac.kntu.sorting.Selection;
 import org.junit.Assert;
 import org.junit.Test;
@@ -13,6 +14,12 @@ public class Main {
     @Test
     public void selection_test(){
         Selection.sort(input);
+        Assert.assertEquals(sorted, input);
+    }
+
+    @Test
+    public void bubble_test(){
+        Bubble.sort(input);
         Assert.assertEquals(sorted, input);
     }
 }
