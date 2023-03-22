@@ -15,7 +15,7 @@ public class Bubble {
     public static void sort(ArrayList<Integer> input){
         int tmp = 0;
         for (int j = 0; j < input.size(); j++) {
-            for (int i = 0; i < input.size() - 1; i++) {
+            for (int i = 0; i < input.size() - j - 1; i++) {
                 if (input.get(i) > input.get(i + 1)) {
                     tmp = input.get(i + 1);
                     input.set(i + 1, input.get(i));
