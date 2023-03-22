@@ -7,6 +7,10 @@ package ir.ac.kntu.sorting;
 
 import java.util.ArrayList;
 
+/**
+ * Selection sort repeatedly selects the minimum
+ * element from an unsorted list and places it at the beginning of the list.
+ */
 public class Selection {
     public static void sort(ArrayList<Integer> input){
         int min_index = 0, min = 0, tmp = 0;
